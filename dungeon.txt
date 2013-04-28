@@ -2,31 +2,33 @@ Game Idea
 
 A dungeon crawler tile based game.
 
-The goal is to have the most valuable treasure at the end.  Not sure if we would want hex or square tiles.
+The goal is to have the most valuable treasure at the end.  Not sure if I would want hex or square tiles.
 
 Everybody has a hero (different race/class combos?) and they are all start at the beginning of the dungeon, on the same space.  The starting  tile has three different paths, and the players will take turns placing their tiles on available 
 
-There are three different sets of dungeon tiles; a set for level 1, 2, and 3.  There would roughly ~5 tiles per player?  There are also three different "boss" tiles.
+There are three different sets of dungeon tiles; a set for level 1, 2, and 3.  There would roughly ~5 tiles per player?  There are also three different "boss" tiles.  All tiles have an "attachment side" indicator, which indicates what side of the tile is placed next to the dungeon.  So players don't get to choose what orientation the newly explored tiles are put down in.  Two tiles per level will be dead ends?  Make sure the boss tile is at least halfway down the tile pile?
 
 What happens on a players turn?  
 
-1) they move their hero.  If the hero moves into an unexplored tile, they draw the next tile from the pile and place it.  The hero must stop here and can more no further.
+1) they move their hero.  If the hero moves into an unexplored tile, they draw the next tile from the pile and place it.  The hero must stop here and can more no further.  Heroes can only move 3 (seems reasonable?) tiles per turn.  
 2) based on what tile the hero ended on, they take an appropriate action.  
+
+At first, the tiles are drawn from the level 1 set.  One of the level 1 tiles will be the 'boss cave' for that level and spawn a boss mob.  Play continues until the boss mob is slain.  When the boss is slain, the board is cleared, and play begins on level 2?  Level two and three are each harder than the previous level.  The game ends when the 3rd boss is slain.  Its impossible for players to die.
 
 Tile Types
 -----------------
-Monster Tile:  
+Monster Tile:
 A monster tile is randomly chosen and placed on the tile.  Whenever a player moves their hero to a monster tile, all players present fight the monster.  Each monster has a "strength" number associated with it.  All have a strength number themselves, and roll the same number of dice as their strength roll.  Each roll of 3 or more is considered a 'hit'.  If the total number of hits is greater or equal to the monsters strength, the monster is defeated.  
 
-Once the monster is defeated, draw and reveal one treasure for each player present when the monster was slain.  Begin with the player who's turn it was.  That player picks a treasure item.  Each other hero, may make an offer of any one(1) item they own.  They all keep their offer facedown until all the other heroes who are bidding have made their selection.  (silent bidding).  The starting player may either take the item they chose, or take any of the offers made to them.  If they take an offer, the player who made the offer gets the item.  Rotate clockwise to the next person who doesn't have an item yet and they pick the next item, and the remaining heroes can bid on whatever they pick, if they wish.  Each hero can only get one piece of treasure and can't bid after they got their item.  
+Once the monster is defeated, draw and reveal (numberOfPlayers + 1) treasure cards.  The first treasure card revealed is one level higher than the current dungeon level.  Players take turns choosing treasure items, beginning with the player who's turn it was, going clockwise. 
 
-Treasure Tile: 
+Alternate item distribution:
+Begin with the player who's turn it was.  That player picks a treasure item.  Each other hero, may make an offer of any one(1) item they own.  They all keep their offer facedown until all the other heroes who are bidding have made their selection.  (silent bidding).  The starting player may either take the item they chose, or take any of the offers made to them.  If they take an offer, the player who made the offer gets the item.  Rotate clockwise to the next person who doesn't have an item yet and they pick the next item, and the remaining heroes can bid on whatever they pick, if they wish.  Each hero can only get one piece of treasure and can't bid after they got their item.  
+
+Empty/Treasure Tile: 
 The random treasure tile is placed facedown here.  If a player moves their hero to the treasure space, they get the treasure.  
 
-Empty Tile:
-If a hero ends their turn on an empty tile, nothing happens?  A monster tile that has been defeated or a treasure tile that has been searched is considered an empty tile.
-
-Puzzle Tile:  ??????
+Obstacle Tile?:  Obstacle tiles have a requirement to "defeat" the obstacle.  For example, one tile might require the player to have a weapon in order to defeat it.  Another might require the hero 
 
 
 Treasure
@@ -35,7 +37,92 @@ Weapons:  weapons provide a strength bonus to the hero.  A hero can only use one
 
 Artifacts:  provide special abilities, or additional strength.  You can use as many artifacts as you want, except for duplicates?  Examples:  boots of speed (+1 movement), Midas touch (+1 gold whenever you get gold?),  cloak of invisibility (allows hero to travel past monsters), etc?
 
+Spell Book: provides a one-time use special ability.  Players may use it whenever they want, but not in the middle of an event (not while somebody is moving, while a fight is being resolved, etc).  Some examples: teleport self, destroy monster, treasure upgrade (upgrade any treasure card to the next highest level) etc...
+
 Gold: Item cards that are simply worth gold at the end of the game.  
 
+Its possible to trade treasure with other players on your location, but you can only trade one treasure card for another of the same treasure level.  
 
+
+The Cards
+--------------
+Monster Cards:  
+
+Each monster card has 4 different strength values on it.  For example:
+
+Goblin
+Strength 2/3/5/9
+
+If this monster was placed on a level 1 tile, its strength would be 2.  Monsters in the boss cave are one level higher than the dungeon level, so that's why there are 4 values.  
+
+Monsters:
+
+x12 Goblin
+3/5/7/9
+
+x4 Wizard
+2/3/5/7
++1 monster modifier
+
+x4 Warlock
+2/4/6/10
+
+x4 Dragon
+3/6/8/13
+
+
+Treasure Cards:
+
+There are 4 stacks, one for each level.
+
+Level 1:
+x30 Gold Coin
+x3 Sword of Strength (+1 strength)
+x3 Boots of Quickness (+1 movement)
+x3 Treasure upgrade spell book (reveal 2 treasure cards of the next level, and pick one to upgrade your treasure too)
+x3 Burst of Strength spell book (+3 strength for the current fight; can be used after the first dice have been rolled)
+x3 Teleport Self spell book (teleport your character to any other tile)
+x6 artifacts, which all give +1 strength and +0 gold
+
+Level 2:
+x30 Bag of Coins (3 gold coins in value)
+x3 Sword of Power (+2 strength)
+x3 Boots of Speed (+2 movement)
+x3 Treasure upgrade spell book (reveal 2 treasure cards of the next level, and pick one to upgrade your treasure too)
+x3 Burst of Strength spell book (+4 strength for the current fight; can be used after the first dice have been rolled)
+x3 Teleport Self spell book (teleport your character to any other tile)
+x6 artifacts, which all give +1 strength and +1 gold
+
+Level 3:
+x30 Ruby (5 gold coins in value)
+x3 Sword of Strength (+3 strength)
+x3 Boots of Speed (+3 movement)
+x3 Treasure upgrade spell book (reveal 2 treasure cards of the next level, and pick one to upgrade your treasure too)
+x3 Burst of Strength spell book (+5 strength for the current fight; can be used after the first dice have been rolled)
+x3 Teleport Self spell book (teleport your character to any other tile)
+x6 artifacts, which all give +1 strength and +2 gold
+
+Level 4:
+x30 Diamond (9 gold coins in value)
+x3 Sword of Strength (+5 strength)
+x3 Boots of Speed (+5 movement)
+x3 Treasure upgrade spell book (reveal 2 treasure cards of the next level, and pick one to upgrade your treasure too)
+x3 Burst of Strength spell book (+9 strength for the current fight; can be used after the first dice have been rolled)
+x3 Teleport Self spell book (teleport your character to any other tile)
+x6 artifacts, which all give +2 strength and +3 gold
+
+
+
+Monster Modifier Cards?  
+
+An idea to make monsters more interesting and varied.  When a monster is spawned, roll a die.  If the roll is less than or equal to the monsters level, the monster get a monster modifier.  There is only one monster modifier of each type.  So if one monster is spawned with the "of Stealth" modifier, no other monsters can get that modifier until that first one is defeated.  Boss monsters always get this modifier.  
+
+of Power: +2/4/6/8 strength
+of Riches: the first two treasure cards are 1 level higher instead of just the first
+of Suction: all characters are moved instantly to this monsters location??? might not be that fun...
+of Quickness: +2 strength
+of Stealth: Can only be defeated by two or more heroes
+of Decay: when defeated, each player must sacrifice a treasure card of their choice
+of Weakness: -1 strength
+of Dampening: All players get -1 movement until this monster is defeated
 
