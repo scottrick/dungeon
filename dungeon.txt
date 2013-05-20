@@ -28,7 +28,7 @@ Begin with the player who's turn it was.  That player picks a treasure item.  Ea
 Empty/Treasure Tile: 
 The random treasure tile is placed facedown here.  If a player moves their hero to the treasure space, they get the treasure.  
 
-Obstacle Tile?:  Obstacle tiles have a requirement to "defeat" the obstacle.  For example, one tile might require the player to have a weapon in order to defeat it.  Another might require the hero 
+Obstacle Tile?:  Obstacle tiles have a requirement to "defeat" the obstacle.  For example, one tile might require the player to have a weapon, or an artifact in order to defeat it.  
 
 
 Treasure
@@ -68,7 +68,8 @@ x4 Warlock
 2/4/6/10
 
 x4 Dragon
-3/6/8/13
+4/7/10/13
++1 treasure card of next level
 
 
 Treasure Cards:
@@ -76,6 +77,7 @@ Treasure Cards:
 There are 4 stacks, one for each level.
 
 Level 1:
+spell scrolls worth 0 at end of game, if not used
 x30 Gold Coin
 x3 Sword of Strength (+1 strength)
 x3 Boots of Quickness (+1 movement)
@@ -85,6 +87,7 @@ x3 Teleport Self spell book (teleport your character to any other tile)
 x6 artifacts, which all give +1 strength and +0 gold
 
 Level 2:
+spell scrolls worth 1 at end of game, if not used
 x30 Bag of Coins (3 gold coins in value)
 x3 Sword of Power (+2 strength)
 x3 Boots of Speed (+2 movement)
@@ -94,6 +97,7 @@ x3 Teleport Self spell book (teleport your character to any other tile)
 x6 artifacts, which all give +1 strength and +1 gold
 
 Level 3:
+spell scrolls worth 3 at end of game, if not used
 x30 Ruby (5 gold coins in value)
 x3 Sword of Strength (+3 strength)
 x3 Boots of Speed (+3 movement)
@@ -103,6 +107,7 @@ x3 Teleport Self spell book (teleport your character to any other tile)
 x6 artifacts, which all give +1 strength and +2 gold
 
 Level 4:
+spell scrolls worth 5 at end of game, if not used
 x30 Diamond (9 gold coins in value)
 x3 Sword of Strength (+5 strength)
 x3 Boots of Speed (+5 movement)
