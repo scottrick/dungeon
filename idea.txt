@@ -2,6 +2,7 @@
 ************ Retro/Basic RPG Ideas ************
 ***********************************************
 
+
 Goals
 -----
 
@@ -9,3 +10,14 @@ Goals
 2) Relatively basic RPG gameplay and concepts.  I want to lean towards zelda rather than skyrim.  
 3) Use JavaScript and the web to deliver the game.  This makes it way easier for anybody to play the game.
 
+
+General Game Concept
+--------------------
+
+Create a simple top down RPG, with controls and graphics similar to SNES Zelda.
+
+First goal would be to create a tile engine which can display the terrain and objects on the terrain.
+
+Second goal would be to create a basic map editor of sorts, so I can create maps for the game easier.  
+
+I think it would be fun to have the over world map be a set map between all play sessions and then have the dungeon levels be randomly generated maps.  
